@@ -11,3 +11,139 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main{
+  width: auto;
+
+}
+.filter{
+  position: absolute;
+  top: 10px;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+.filter input{
+  width: 800px;
+  height: 40px;
+  font-size: 28px;
+  border-radius: 10px;
+  border: 6px solid #dde9f3;
+  border-bottom-color: #f0f8ff;
+  border-right-color: #f0f8ff;
+  color: #95a5b2;
+}
+.users, .profile{
+  width: 48%;
+  margin-top: 100px;
+  border-radius: 15px;
+  height: 850px;
+  border: 6px solid #dde9f3;
+  border-bottom-color: #f0f8ff;
+  border-right-color: #f0f8ff;
+}
+.users{
+  float: left;
+
+}
+.profile{
+  float: right;
+}
+
+.pages {
+  position: absolute;
+  top: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pages div{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #61dafb;
+  margin-left: 10px;
+  box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.39);
+}
+.pages div.active{
+  background: aliceblue;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #61dafb;
+}
+.users{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.users .user{
+  width: 100%;
+}
+.avatar{
+  float: left;
+  width: 30%;
+}
+.profile .avatar{
+  padding-top: 10px;
+  text-align: center;
+}
+.users img{
+  border-radius: 50%;
+  width: 128px;
+  height:128px;
+}
+.profile img{
+  width: 170px;
+  height: 170px;
+}
+
+.contacts {
+  float: right;
+  width: 70%;
+
+}
+.users .contacts{
+  margin-top: 37px;
+}
+.profile .contacts{
+  margin-top: 60px;
+}
+.profile .more_info{
+  margin-top: 186px;
+  width: 98%;
+  margin-left: 2%;
+}
+
+.button_next{
+  position: absolute;
+  top: 1045px;
+  text-align: center;
+  background: #dde9f3;
+  line-height: 48px;
+  font-size: 36px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 6px solid #f0f8ff;
+  left: 40%;
+  width: 20%;
+  height: 60px;
+  font-weight: 700;
+  box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.39);
+  text-shadow: 1px 1px 0px #7c8185;
+}
+.users .user, .button_next, .profile{
+  cursor: pointer;
+}
+
+
+
+
+div[data-visible="false"],
+li[data-visible="false"]{
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
